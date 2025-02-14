@@ -90,5 +90,5 @@ impl Paddle {
     }
 }
 
-#[derive(Component)]
-struct Brick;
+// #[derive(Component)]
+// struct Brick;

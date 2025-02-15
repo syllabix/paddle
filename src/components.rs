@@ -10,9 +10,8 @@ use config::{
     BALL_COLOR, BALL_SIZE, BALL_SPEED, GUTTER_HEIGHT, PADDLE_HEIGHT, PADDLE_ONE_COLOR,
     PADDLE_SPEED, PADDLE_TWO_COLOR, PADDLE_WIDTH,
 };
-use leafwing_input_manager::prelude::ActionState;
 
-use crate::input::{self, Action};
+use crate::input::{self};
 
 mod config {
     use bevy::color::Color;

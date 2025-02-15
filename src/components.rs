@@ -1,9 +1,15 @@
-//! Game Components Module
+//! Core game components and systems for the paddle game.
 //!
-//! This module contains all the component structs used in the game.
-//! Components are pieces of data that can be attached to entities in the ECS (Entity Component System).
-//! They are used to define the behavior and properties of game objects.
+//! This module contains the fundamental building blocks used to construct the game entities:
+//! - Position and velocity components for movement
+//! - Shape component for collision detection
+//! - Ball, Paddle, and Gutter entities and their associated systems
+//! - Spawn systems for creating game objects
 //!
+//! The components follow Bevy's ECS pattern and are designed to be composable.
+//! Systems in this module handle core game mechanics like paddle movement and
+//! ball physics.
+
 
 use bevy::{log, prelude::*};
 use config::{

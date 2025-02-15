@@ -31,8 +31,9 @@ devenv:
 	cargo install matchbox_server
 
 ## run the game
-run: run.native
-
+run:
+	cargo run
+	
 ## run the game natively
 run.native:
 	cargo run

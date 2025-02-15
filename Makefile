@@ -28,7 +28,6 @@ devenv:
 	rustup target add wasm32-unknown-unknown
 	cargo install wasm-server-runner
 	cargo install cargo-watch
-	cargo install matchbox_server
 
 ## run the game
 run:
@@ -49,7 +48,3 @@ watch.web:
 ## run the project in the native environment and watch for changes.
 watch.native:
 	cargo watch -cx "run"
-
-## run the matchbox server.
-run.matchbox:
-	matchbox_server

@@ -1,3 +1,14 @@
+//! Game state management and scoring system.
+//!
+//! This module handles the core game state including:
+//! - Score tracking for both players
+//! - Point scoring detection when ball goes past paddles
+//! - Ball reset logic after points
+//! - Events for communicating scoring between systems
+//!
+//! The scoring system uses Bevy's event system to decouple point detection
+//! from score updates. The Score resource maintains the current game state.
+
 use bevy::{ecs::{event::{Event, EventReader, EventWriter}, query::With, system::{Query, ResMut, Resource}}, math::Vec2, window::Window};
 
 use crate::components::{Ball, Position, Velocity};

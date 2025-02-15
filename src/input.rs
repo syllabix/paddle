@@ -1,3 +1,14 @@
+//! Input handling module for the paddle game.
+//!
+//! This module manages player input using the `leafwing_input_manager` crate.
+//! It provides:
+//! - Action enum defining possible player inputs (up/down movement)
+//! - Input mapping configuration for keyboard controls
+//! - Input handling system to update paddle velocity based on player input
+//!
+//! The input system uses Bevy's ECS pattern and integrates with the game's
+//! velocity-based movement system. Both arrow keys and WASD controls are supported.
+
 use bevy::{
     ecs::{query::With, system::Query},
     input::keyboard::KeyCode,

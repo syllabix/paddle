@@ -1,3 +1,16 @@
+//! Physics module for handling collisions and movement in the paddle game.
+//!
+//! This module provides collision detection and resolution between the ball and other game objects.
+//! It uses Bevy's built-in bounding volume types for efficient collision checks.
+//!
+//! The main components are:
+//! - `Collision` enum representing different collision sides
+//! - `detect_collision` function for precise collision detection
+//! - `handle_collisions` system that updates velocities based on collisions
+//!
+//! The collision detection uses a combination of broad-phase (bounding volume intersection)
+//! and narrow-phase (closest point calculation) to determine exact collision sides.
+
 use bevy::{
     ecs::{
         query::{With, Without},

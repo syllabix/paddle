@@ -1,3 +1,14 @@
+//! Scoreboard module for displaying and updating game scores.
+//!
+//! This module handles the visual representation of the game score, including:
+//! - Separate text components for player and opponent scores
+//! - Score display positioning and styling
+//! - Score update system that responds to score changes
+//!
+//! The scoreboard uses Bevy's UI system with absolute positioning and
+//! custom styling. It observes the Score resource and updates the display
+//! automatically when scores change.
+
 use bevy::{
     color::Color, ecs::{
         change_detection::DetectChanges,

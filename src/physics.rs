@@ -3,7 +3,6 @@ use bevy::{
         query::{With, Without},
         system::Query,
     },
-    log,
     math::bounding::{Aabb2d, BoundingCircle, BoundingVolume, IntersectsVolume},
 };
 

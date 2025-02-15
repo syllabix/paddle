@@ -75,6 +75,4 @@ pub fn reset_ball(
         Scorer::Player => score.player += 1,
       }
     }
-  
-    println!("Score: {} - {}", score.player, score.opponent);
   }
